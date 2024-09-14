@@ -1,0 +1,35 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Check Progress</title>
+    <!-- Link to Tailwind CSS CDN -->
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body class="bg-gray-100">
+    <!-- Navigation Bar -->
+    <nav class="bg-gray-800 p-4">
+        <div class="container mx-auto flex items-center justify-between">
+            <a href="#" class="text-white text-2xl font-bold">XYZ Construction</a>
+        </div>
+    </nav>
+
+    <!-- Form Section -->
+    <div class="container mx-auto py-16">
+        <h1 class="text-3xl font-bold text-center mb-8">Check the Progress</h1>
+        <div class="max-w-lg mx-auto bg-white p-6 rounded-lg shadow-md">
+            <form method="post" enctype="multipart/form-data">
+                {% csrf_token %}
+                {{ form.as_p }}
+                <button type="submit"
+                    class="w-full py-2 px-4 bg-yellow-500 text-white font-semibold rounded-lg hover:bg-yellow-600 transition">Submit</button>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

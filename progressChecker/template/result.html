@@ -1,0 +1,36 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Result</title>
+    <!-- Link to Tailwind CSS CDN -->
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body class="bg-gray-100">
+    <!-- Navigation Bar -->
+    <nav class="bg-gray-800 p-4">
+        <div class="container mx-auto flex items-center justify-between">
+            <a href="/" class="text-white text-2xl font-bold">ConstructionTracker</a>
+        </div>
+    </nav>
+    <!-- Result Section -->
+    <div class="container mx-auto py-16">
+        <h1 class="text-3xl font-bold text-center mb-8">Analysis Result</h1>
+        <div class="w-full mx-auto bg-white p-6 rounded-lg ">
+            <!-- <p class="text-lg">The activity selected is: <strong>{{ activity }}</strong></p> -->
+            <div class="mt-4">
+                <p class="text-lg">Uploaded Image:</p>
+                <img src="{{image_url}}" alt="Uploaded Image" class="w-full h-auto mt-2 ">
+                <!-- <h2 class="text-[4rem] text-bold">{{activity}}</h2> -->
+                <h1 class="text-lg">Description:</h1>
+                <p class="text-lg text-bold-700  text-green-600	">{{ predicted_stage}} {{ generated_text }}</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

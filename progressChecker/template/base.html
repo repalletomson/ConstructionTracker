@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Construction Company</title>
+    <!-- Link to Tailwind CSS CDN -->
+
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <nav class="bg-gray-800 p-4">
+        <div class="container mx-auto flex items-center justify-between">
+            <a href="#" class="text-white text-2xl font-bold">ConstructionTracker</a>
+            <ul class="flex space-x-6">
+                <li><a href="#home" class="text-white hover:text-yellow-500">Home</a></li>
+                <li><a href="#about" class="text-white hover:text-yellow-500">About Us</a></li>
+                <li><a href="#services" class="text-white hover:text-yellow-500">Services</a></li>
+                <li><a href="#contact" class="text-white hover:text-yellow-500">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Background Image Container -->
+    <div class="relative h-screen bg-cover bg-center"
+        style="background-image: url('https://artofconstruction.photography/wp-content/uploads/2020/04/img_9577.jpg');">
+        <!-- Overlay Content -->
+        <div class="absolute inset-0 bg-black opacity-50"></div>
+        <div class="relative z-10 flex flex-col items-center justify-center h-full text-white text-center">
+            <h1 class="text-5xl font-bold mb-4">Building the Future</h1>
+            <p class="text-lg mb-8">Your trusted partner in high-quality construction projects.</p>
+            <a href="/upload"  
+                class="px-6 py-2 bg-yellow-500 text-white font-semibold rounded-full hover:bg-yellow-600 transition">Explore
+                Our Services</a>
+        </div>
+    </div>
+
+    <!-- About Us Section -->
+    <section id="about" class="py-16 bg-gray-100">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl font-bold mb-6">About Us</h2>
+            <p class="text-lg text-gray-700">ConstructionTrackers is committed to delivering exceptional quality and
+                service. With years of experience in the industry, we are your go-to choice for reliable and
+                professional construction services.</p>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-16 	">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl font-bold mb-6">Our Services</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 bg-zinc-90">
+                <div class="p-6  shadow-lg rounded-lg bg-zinc-900">
+                    <h3 class="text-xl font-semibold mb-4">Foundation</h3>
+                    <p class="text-gray-700">High-quality foundation services to ensure a solid start for your projects.
+                    </p>
+                </div>
+                <div class="p-6 bg-grey-950 shadow-lg rounded-lg">
+                    <h3 class="text-xl font-semibold mb-4">Super Structure</h3>
+                    <p class="text-gray-700">Expert construction of superstructures to meet all your building
+                        requirements.</p>
+                </div>
+                <div class="p-6 bg-zinc-900 shadow-lg rounded-lg">
+                    <h3 class="text-xl font-semibold mb-4">Furnishing</h3>
+                    <p class="text-gray-700">Complete furnishing solutions to make your spaces functional and stylish.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 bg-gray-100">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl font-bold mb-6">Contact Us</h2>
+            <p class="text-lg text-gray-700">Get in touch with us to discuss your construction needs and request a
+                quote.</p>
+            <a href="mailto:info@construction_tracker_process.com"
+                class="px-6 py-2 bg-yellow-500 text-white font-semibold rounded-full hover:bg-yellow-600 transition">Email
+                Us</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 p-4 text-center text-white">
+        <p>&copy; 2024 ConstructionTrackerProgress. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
